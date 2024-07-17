@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('estrategiaWMS', [App\Http\Controllers\EstrategiaWmsController::class, 'show']);
+Route::get('/estrategiaWMS/{cdEstrategia}/{dsHora}/{dsMinuto}/prioridade', [App\Http\Controllers\EstrategiaWmsController::class, 'show']);
