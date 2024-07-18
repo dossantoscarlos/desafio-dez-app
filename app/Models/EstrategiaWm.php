@@ -12,9 +12,22 @@ class EstrategiaWm extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'cd_estrategia_wms';
+
+    protected $table = "estrategia_wms";
+
+    public $timestamps = false;
+
+
+    protected $fillable = [
+        'ds_estrategia_wms',
+        'nr_prioridade',
+        'dt_registro',
+        'dt_modificado',
+    ];
 
     public function horarios () : HasMany
     {
-        return $this->hasMany(EstrategiaWmHorarioPrioridade::class);
+        return $this->hasMany(EstrategiaWmHorarioPrioridade::class,'cd_estrategia_wms', 'cd_estrategia_wms');
     }
 }

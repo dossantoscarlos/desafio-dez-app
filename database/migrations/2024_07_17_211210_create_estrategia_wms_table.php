@@ -12,10 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('estrategia_wms', function (Blueprint $table) {
+            $table->id('cd_estrategia_wms');
             $table->string('ds_estrategia_wms');
             $table->integer('nr_prioridade');
-            $table->timestamps('dt_registro');
-            $table->timestamps('dt_modificado');
+            $table->timestamp('dt_registro')->default(now());
+            $table->timestamp('dt_modificado')->default(now());
         });
     }
 
