@@ -32,6 +32,8 @@
     "nr_prioridade": 30
 }
 ```
+## Pasta doc
+Segue o arquivo json para import da collection. A collection foi importada do insominia mais pode ser carregada no postman sem perdas.
 
 ## Pré-requisito
 - PHP

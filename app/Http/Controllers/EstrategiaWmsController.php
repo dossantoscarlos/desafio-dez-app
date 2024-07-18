@@ -75,8 +75,10 @@ class EstrategiaWmsController extends Controller
             return response()->json(['message' => 'Page not found'], 404);
         }
 
+        $ds_hora_minuto =  str_pad($ds_hora, 2, '0', STR_PAD_LEFT) . ':' . str_pad($ds_minuto, 2, '0', STR_PAD_LEFT);
+
         $model = EstrategiaWmHorarioPrioridade::where('cd_estrategia_wms', $cd_estrategia_wms)
-            ->where('ds_horario_inicio', '=', $ds_hora . ':' . $ds_minuto)
+            ->where('ds_horario_inicio', '=', $ds_hora_minuto)
             ->orderByDesc('nr_prioridade')
             ->get('nr_prioridade')->first();
 

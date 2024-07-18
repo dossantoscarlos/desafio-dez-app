@@ -1,0 +1,178 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-07-18T06:33:40.593Z",
+    "__export_source": "insomnia.desktop.app:v2023.5.7",
+    "resources": [
+        {
+            "_id": "req_7802e0fcc54242bb9b9750407f967101",
+            "parentId": "fld_487ea98263134a0bbf512bd408f9fc05",
+            "modified": 1721271356589,
+            "created": 1721271312484,
+            "url": "http://localhost/api/estrategiawms/",
+            "name": "criando_estrategia_wms",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": " {\n\t \"dsEstrategia\": \"RETIRA\",\n\t \"nrPrioridade\": 10,\n\t \"horarios\":[\n \t\t\t{\n\t\t\t\t \"dsHorarioInicio\": \"09:00\",\n\t\t\t\t \"dsHorarioFinal\": \"10:00\",\n\t\t\t\t \"nrPrioridade\": 40\n\t\t\t},\n \t\t\t{\n\t\t\t\t \"dsHorarioInicio\": \"10:01\",\n\t\t\t\t \"dsHorarioFinal\": \"11:00\",\n\t\t\t\t \"nrPrioridade\": 30\n     \t},\n\t\t\t{\n\t\t\t\t\t\"dsHorarioInicio\": \"11:01\",\n\t\t\t\t\t\"dsHorarioFinal\": \"12:00\",\n\t\t\t\t\t\"nrPrioridade\":20\n\t\t\t}\n\t\t]\n }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1721271312484,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_487ea98263134a0bbf512bd408f9fc05",
+            "parentId": "wrk_00fbcd8e019b4019843d5b49e3db328d",
+            "modified": 1721271246345,
+            "created": 1721271246345,
+            "name": "desafio",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1721271246345,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_00fbcd8e019b4019843d5b49e3db328d",
+            "parentId": null,
+            "modified": 1689182907635,
+            "created": 1689182907635,
+            "name": "My Collection",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_14a488c51510484a83157de67e2ce30f",
+            "parentId": "fld_487ea98263134a0bbf512bd408f9fc05",
+            "modified": 1721271301905,
+            "created": 1721271257186,
+            "url": "http://localhost/api/estrategiawms/62/10/01/prioridade",
+            "name": "consulta_prioridade",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1721271257186,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_215c40a91ccd438cf560001dfa37ea75f0a7587f",
+            "parentId": "wrk_00fbcd8e019b4019843d5b49e3db328d",
+            "modified": 1689182907637,
+            "created": 1689182907637,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1689182907637,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_215c40a91ccd438cf560001dfa37ea75f0a7587f",
+            "parentId": "wrk_00fbcd8e019b4019843d5b49e3db328d",
+            "modified": 1721073538079,
+            "created": 1689182907638,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "XSRF-TOKEN",
+                    "value": "eyJpdiI6IlFycmxKWnF6TFJyWVNRZVZRT1FhWnc9PSIsInZhbHVlIjoicXZlc1ZkUnpVbVU3a055SWNvcnJuY2NOc1NTcERvcmJwNkZDUGluNnR5WVQ0NlQydXByY0pvQlJtK3g1K0U2Q2lvL1FOOCsveWZlcHoxL2dPV3BpdDlnei9JUEd1bmlIcnhsdWhaYjR0NGQ3YjRwVjBNbDBzWnh1MzkxK1ozK28iLCJtYWMiOiJiOGZiY2Y5NDI0MmE5MGFkNzBhN2MzZDY3YjVlNzc4YzViOGYwZTMyYjc1NDE2NDk3MDdkZmQyOWNmYTlmZDIwIiwidGFnIjoiIn0%3D",
+                    "expires": "2023-11-10T20:51:05.000Z",
+                    "maxAge": 7200,
+                    "domain": "localhost",
+                    "path": "/",
+                    "hostOnly": true,
+                    "creation": "2023-07-12T18:33:59.937Z",
+                    "lastAccessed": "2023-11-10T18:51:05.137Z",
+                    "sameSite": "lax",
+                    "id": "7946754022640301"
+                },
+                {
+                    "key": "laravel_session",
+                    "value": "eyJpdiI6IlBaRzd0NzdVa2VWczFtMkgvdlVjL2c9PSIsInZhbHVlIjoiaFFOU3o4azlGSlNwajdFUTZXUHZXNnJyTkRTRGpHdzU5cm9DNU5ydXFKUTdRSzlmSUNTK3hHalcxWXpra01ObTdkc20ySVZWakVyaG5YTklPMDVZVlJjdk1ZcUxtWUFxYkdWbHlZKzRqQXQ4M2x1aGlQOHF6TlNwell1ZWVRQ2kiLCJtYWMiOiIyNGU0MWFlYzg1NmJmY2I2MmU3MzdhODcyOGVjZmEzNzkwNGVmZDU3OGI2YjcyZjU3ZjY0Yjg4YjI1ZTAyNGY1IiwidGFnIjoiIn0%3D",
+                    "expires": "2023-11-10T20:51:05.000Z",
+                    "maxAge": 7200,
+                    "domain": "localhost",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2023-07-12T18:33:59.938Z",
+                    "lastAccessed": "2023-11-10T18:51:05.139Z",
+                    "sameSite": "lax",
+                    "id": "4961655968003398"
+                },
+                {
+                    "key": "PHPSESSID",
+                    "value": "pgbq3uqn0e75kcjg7f6rt3kto7",
+                    "domain": "localhost",
+                    "path": "/",
+                    "hostOnly": true,
+                    "creation": "2023-11-14T03:36:36.203Z",
+                    "lastAccessed": "2023-11-14T03:36:36.203Z",
+                    "id": "24782330314780054"
+                },
+                {
+                    "key": "JSESSIONID",
+                    "value": "CCF4D941B50163CD233D5A16131AF2C6",
+                    "domain": "127.0.0.1",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2024-02-21T18:44:44.381Z",
+                    "lastAccessed": "2024-02-22T06:47:08.522Z",
+                    "id": "7350261194504222"
+                },
+                {
+                    "key": "_vercel_sso_nonce",
+                    "value": "0P2cleuBo0Q8tQWbBriiwF3L",
+                    "maxAge": 3600,
+                    "domain": "apiwithsanctum-lofpt65y7-dossantoscarlos-projects.vercel.app",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2024-07-15T19:52:16.780Z",
+                    "lastAccessed": "2024-07-15T19:58:58.079Z",
+                    "sameSite": "lax",
+                    "id": "6167976999382128"
+                }
+            ],
+            "_type": "cookie_jar"
+        }
+    ]
+}
